@@ -161,7 +161,13 @@ export default function Navbar() {
           <li><a href="#contact" className="hover:underline" onClick={() => setOpen(false)}>Contact Me</a></li>
           <li>
             <button className="bg-black text-white px-4 py-2 rounded-md flex items-center gap-2">
-              Resume <span>⬇️</span>
+                      <a 
+  href="/MdShahnawaz Alam.CV (1).pdf" 
+  download 
+  className="bg-black text-white px-4 py-0.5 rounded-md flex items-center gap-2"
+>
+  Resume <span><FiDownload /></span>
+</a>
             </button>
           </li>
         </ul>
