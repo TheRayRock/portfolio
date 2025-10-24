@@ -6,10 +6,7 @@ import { FaTwitter } from "react-icons/fa";
 const Hero = () => (
   <section className="flex flex-col md:flex-row items-center justify-between py-16 px-8">
     <div className="flex-1 max-w-xl">
-      {/* <h1 className="text-4xl md:text-5xl font-light">Hello I’am <span className="font-bold">Evren Shah.</span><br />
-        <span className="font-bold">Frontend <span className="outline-text">Developer</span></span><br />
-        <span>Based In <span className="font-bold">India.</span></span>
-      </h1> */}
+   
       <h1 className="text-4xl md:text-5xl font-light">
   Hello I’m <span className="font-bold">Md Shahnawaz Alam.</span><br />
   <span className="font-bold">Backend <span className="outline-text">Developer</span></span><br />
