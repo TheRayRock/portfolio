@@ -1,37 +1,111 @@
-// import Link from 'next/link'
+"use client";
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { FiDownload } from "react-icons/fi";
 
-// export default function Navbar(){
-//   return (
-//     <header style={{padding:'1rem 0', borderBottom:'1px solid rgba(255,255,255,0.03)'}}>
-//       <div className="container" style={{display:'flex', alignItems:'center', justifyContent:'space-between'}}>
-//         {/* <Link href="/"><a style={{fontWeight:700, letterSpacing:'.4px'}}>YourName</a></Link> */}
-//         <Link href="/" style={{fontWeight:700, letterSpacing:'.4px'}}>Md Shahnawaz Alam</Link>
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
 
-//         <nav style={{display:'flex', gap:'1rem', alignItems:'center'}}>
-//           <a href="#projects" style={{color:'var(--muted)'}}>Projects</a>
-//           <a href="#about" style={{color:'var(--muted)'}}>About</a>
-//           <a href="#contact" style={{padding:'8px 12px', background:'linear-gradient(90deg,var(--accent), #4f9cff)', borderRadius:8, color:'#071024'}}>Contact</a>
-//         </nav>
-//       </div>
-//     </header>
-//   )
-// }
+  return (
+    <nav className="bg-white shadow-md fixed w-full z-10 top-0 left-0 scroll-smooth">
+      <div className="flex justify-between items-center py-4 px-8">
+        {/* Logo */}
+        <div className="font-bold text-2xl text-gray-800">Personal</div>
 
-const Navbar = () => (
-  <nav className="flex justify-between items-center py-4 px-8">
-    <div className="font-bold text-2xl">Personal</div>
-    <ul className="flex space-x-8 items-center">
-      <li><a href="/AboutMe" className="hover:underline">About Me</a></li>
-      <li><a href="#" className="hover:underline">Skills</a></li>
-      <li><a href="#" className="hover:underline">Project</a></li>
-      <li><a href="#" className="hover:underline">Contact Me</a></li>
-      <li>
-        <button className="bg-black text-white px-4 py-2 rounded-md flex items-center gap-2">
-          Resume <span>⬇️</span>
-        </button>
-      </li>
-    </ul>
-  </nav>
-);
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex space-x-8 items-center">
+          <li>
+            <a href="#about" className="hover:underline">
+              About Me
+            </a>
+          </li>
+          <li>
+            <a href="#skills" className="hover:underline">
+              Skills
+            </a>
+          </li>
+          <li>
+            <a href="#projects" className="hover:underline">
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href="#contact" className="hover:underline">
+              Contact Me
+            </a>
+          </li>
+          <li>
+            <button className="bg-black text-white px-4 py-2 rounded-md flex items-center gap-2">
+              {/* Resume <span>⬇️</span> */}
+              <a
+                href="/MdShahnawaz Alam.CV.pdf"
+                download
+                className="bg-black text-white px-4 py-0.2 rounded-md flex items-center gap-2"
+              >
+                Resume{" "}
+                <span>
+                  <FiDownload />
+                </span>
+              </a>
+            </button>
+          </li>
+        </ul>
 
-export default Navbar;
+        {/* Mobile Icon */}
+        <div
+          className="md:hidden text-2xl cursor-pointer"
+          onClick={() => setOpen(!open)}
+        >
+          {open ? <FaTimes /> : <FaBars />}
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      {open && (
+        <ul className="flex flex-col items-center space-y-4 pb-4 bg-white shadow-md md:hidden">
+          <li>
+            <a
+              href="#about"
+              className="hover:underline"
+              onClick={() => setOpen(false)}
+            >
+              About Me
+            </a>
+          </li>
+          <li>
+            <a
+              href="#skills"
+              className="hover:underline"
+              onClick={() => setOpen(false)}
+            >
+              Skills
+            </a>
+          </li>
+          <li>
+            <a
+              href="#projects"
+              className="hover:underline"
+              onClick={() => setOpen(false)}
+            >
+              Projects
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              className="hover:underline"
+              onClick={() => setOpen(false)}
+            >
+              Contact Me
+            </a>
+          </li>
+          <li>
+            <button className="bg-black text-white px-4 py-2 rounded-md flex items-center gap-2">
+              Resume <span>⬇️</span>
+            </button>
+          </li>
+        </ul>
+      )}
+    </nav>
+  );
+}
