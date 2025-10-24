@@ -3,6 +3,7 @@ import Navbar from './component/Navbar'
 import Hero from './component/Hero'
 import Skills from '@/app/component/Skills'
 import Experience from '@/app/component/Experience'
+import Projects from '@/app/component/Projects'
 // import AboutMe from '@/app/component/AboutMe/page'
 import AboutMe from './component/AboutMe/page'
 
@@ -15,6 +16,7 @@ export default function Home() {
         <Skills />
          <Experience />
       <AboutMe />
+    <Project />
       </div>
     </div>
   )
