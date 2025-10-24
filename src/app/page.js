@@ -1,13 +1,13 @@
 
-import Navbar from './component/Navbar'
-import Hero from './component/Hero'
-import Skills from '@/app/component/Skills'
-import Experience from '@/app/component/Experience'
+import Navbar from './component/Navbar/Navbar'
+import Hero from './component/Hero/Hero'
+import Skills from './component/Skills/Skills'
+import Experience from './component/Experience/Experience'
 
 // import AboutMe from '@/app/component/AboutMe/page'
-import AboutMe from './component/AboutMe'
-import Projects from './component/Projects'
-import Footer from './component/Footer'
+import AboutMe from './component/AboutMe/AboutMe'
+import Projects from './component/Projects/Projects'
+import Footer from './component/Footer/Footer'
 
 export default function Home() {
   return (
