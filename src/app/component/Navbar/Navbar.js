@@ -137,7 +137,7 @@ export default function Navbar() {
           <li><a href="#about" className="hover:underline">About Me</a></li>
           <li><a href="#skills" className="hover:underline">Skills</a></li>
           <li><a href="#projects" className="hover:underline">Projects</a></li>
-          <li><a href="#contact" className="hover:underline">Contact Me</a></li>
+          <li><a href="#contactform" className="hover:underline">Contact Me</a></li>
           <li>
             <button className="bg-black text-white px-4 py-2 rounded-md flex items-center gap-2">
               <a 
@@ -164,7 +164,8 @@ export default function Navbar() {
           <li><a href="#about" className="hover:underline" onClick={() => setOpen(false)}>About Me</a></li>
           <li><a href="#skills" className="hover:underline" onClick={() => setOpen(false)}>Skills</a></li>
           <li><a href="#projects" className="hover:underline" onClick={() => setOpen(false)}>Projects</a></li>
-          <li><a href="#contact" className="hover:underline" onClick={() => setOpen(false)}>Contact Me</a></li>
+          <li><a href="#contactform" className="hover:underline" onClick={() => setOpen(false)}>Contact Me</a></li>
+
           <li>
             <button className="bg-black text-white px-4 py-2 rounded-md flex items-center gap-2">
                       <a 

@@ -4,6 +4,7 @@ import { FaGithubAlt } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin, FaDiscord } from "react-icons/fa";
 
+
 const Hero = () => (
   <section className="flex flex-col md:flex-row items-center justify-between py-16 px-8">
     <div className="flex-1 max-w-xl">

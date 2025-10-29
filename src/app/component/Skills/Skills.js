@@ -27,15 +27,6 @@ const Skills = () => (
     <h2 className="text-3xl font-bold mb-8 text-center">My <span className="font-light">Skills</span></h2>
     <div className="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-full">
       {skills.map(skill => (
-        // <div
-        //   key={skill.name}
-        //   className={`flex flex-col items-center justify-center border rounded-md py-8 transition-all duration-300 
-        //   ${skill.highlight ? "bg-black text-white" : "hover:bg-black hover:text-white"}`}
-
-        // >
-        //   <img src={skill.icon} alt={skill.name} className="h-10 mb-4" />
-        //   <span className="text-lg font-semibold">{skill.name}</span>
-        // </div>
 <div
 key={skill.name}
  
