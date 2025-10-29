@@ -2,6 +2,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaGithubAlt } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaDiscord } from "react-icons/fa";
 
 const Hero = () => (
   <section className="flex flex-col md:flex-row items-center justify-between py-16 px-8">
@@ -16,13 +17,41 @@ const Hero = () => (
       <p className="text-gray-400 mt-4">
         I’m Sagar Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry...
       </p>
-      <div className="flex space-x-4 mt-8">
-        {/* Replace icons with react-icons or SVGs as needed */}
+      {/* <div className="flex space-x-4 mt-8">
         <button className="p-2 rounded-md bg-black text-white"><FaFacebook /></button>
         <button className="p-2 rounded-md border"><FaGithub /></button>
         <button className="p-2 rounded-md border"><FaTwitter /></button>
         <button className="p-2 rounded-md border"><FaGithubAlt /></button>
-      </div>
+      </div> */}
+
+
+<div className="flex space-x-4 mt-8">
+  <a
+    href="https://www.linkedin.com/in/md-shahnawaz-alam-1463981b7/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="p-2 rounded-md border transition-all duration-300 hover:bg-black hover:text-white"
+  >
+    <FaLinkedin className="text-xl" />
+  </a>
+  <a
+    href="https://github.com/TheRayRock"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="p-2 rounded-md border transition-all duration-300 hover:bg-black hover:text-white"
+  >
+    <FaGithub className="text-xl" />
+  </a>
+  <a
+    href="https://discord.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="p-2 rounded-md border transition-all duration-300 hover:bg-black hover:text-white"
+  >
+    <FaDiscord className="text-xl" />
+  </a>
+</div>
+
     </div>
     <div className="flex-1 flex justify-center mt-8 md:mt-0">
       {/* You can use a custom SVG or illustration image */}

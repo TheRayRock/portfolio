@@ -17,9 +17,7 @@ const experiences = [
 
 const Experience = () => (
   <section className="bg-black py-16 px-4">
-    <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-10">
-      My <span className="font-extrabold">Experience</span>
-    </h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white  text-center">My <span className="font-light">Experience</span></h2>
     <div className="max-w-2xl mx-auto flex flex-col gap-6">
       {experiences.map((exp, idx) => (
         <div

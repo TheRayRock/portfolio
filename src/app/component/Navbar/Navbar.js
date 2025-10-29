@@ -124,7 +124,13 @@ export default function Navbar() {
     <nav className="bg-white shadow-md fixed w-full z-10 top-0 left-0 scroll-smooth">
       <div className="flex justify-between items-center py-4 px-8">
         {/* Logo */}
-        <div className="font-bold text-2xl text-gray-800"> Personal</div>
+        {/* <div className="font-bold text-2xl text-gray-800"> Personal</div> */}
+                 
+           <div className="flex items-center gap-2 font-bold text-2xl text-gray-800">
+  <img src="/letter-p.png" alt="logo" className="h-8 w-8" />
+  <span>Personal</span>
+</div>
+
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 items-center">

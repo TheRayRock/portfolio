@@ -65,7 +65,7 @@ const ProjectCard = ({ project, reverse }) => (
 
 const Projects = () => (
   <section className="bg-black px-6 md:px-16 py-20  max-w-full">
-    <h2 className="text-3xl md:text-4xl text-white font-semibold text-center mb-16">My <span className="font-extrabold">Projects</span></h2>
+    <h2 className="text-3xl md:text-4xl text-white font-semibold text-center mb-16">My <span className="font-light ">Projects</span></h2>
     {projects.map((project, idx) => (
       <ProjectCard project={project} reverse={idx % 2 === 1} key={project.id} />
     ))}
