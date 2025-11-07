@@ -22,7 +22,8 @@ export default function Home() {
   <ChatPage />
 </div>
 
-        <section id="skills" className="min-h-screen py-16">
+        {/* <section id="skills" className="min-h-screen py-16"> */}
+        <section id="skills" className="scroll-mt-16">
           <h2>
             <Skills />
           </h2>
@@ -34,20 +35,22 @@ export default function Home() {
           </h2>
         </section>
 
-        <section id="about" className="min-h-screen py-16">
+        {/* <section id="about" className="min-h-screen py-16"> */}
+        <section id="about" className="scroll-mt-16">
           <h2>
             <AboutMe />
           </h2>
         </section>
 
-        <section id="projects" className="min-h-screen py-16">
+        <section id="projects" className="scroll-mt-16">
           <h2>
             <Projects />
           </h2>
         </section>
 
 
-                <section id="contactform" className="min-h-screen py-16">
+                {/* <section id="contactform" className="min-h-screen py-16"> */}
+          <section id="contactform" className="scroll-mt-16">
           <h2>
               <ContactForm />
           </h2>
@@ -62,3 +65,8 @@ export default function Home() {
     </div>
   );
 }
+
+
+
+
+
