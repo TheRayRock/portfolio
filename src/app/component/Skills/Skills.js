@@ -23,7 +23,7 @@ const skills = [
 
 
 const Skills = () => (
-  <section className="py-16 px-8">
+  <section className="py-8 px-8">
     <h2 className="text-3xl font-bold mb-8 text-center">My <span className="font-light">Skills</span></h2>
     <div className="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-full">
       {skills.map(skill => (

@@ -37,7 +37,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 px-6 py-12">
+    <section className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 px-6 py-8">
       {/* Left Section */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
@@ -65,21 +65,21 @@ export default function ContactForm() {
         transition={{ duration: 0.6, delay: 0.2 }}
         className="md:w-1/2 bg-white/90 shadow-xl rounded-2xl p-8 w-full max-w-md mx-auto backdrop-blur-sm border border-gray-200"
       >
-        <form onSubmit={handleSubmit} className="space-y-5">
+        <form onSubmit={handleSubmit} className="space-y-5 ">
           <div>
-            <label className="block text-sm text-gray-700 mb-1">Your Name</label>
+            <label className="flex justify-start text-sm text-gray-700 mb-1">Your Name</label>
             <input
               type="text"
               name="name"
               value={form.name}
               onChange={handleChange}
               placeholder="Enter your name"
-              className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-800 transition bg-gray-50"
+              className="w-full border border-gray-300  rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-800 transition bg-gray-50"
               required
             />
           </div>
           <div>
-            <label className="block text-sm text-gray-700 mb-1">Your Email</label>
+            <label className="flex justify-start  text-sm text-gray-700 mb-1">Your Email</label>
             <input
               type="email"
               name="email"
@@ -91,7 +91,7 @@ export default function ContactForm() {
             />
           </div>
           <div>
-            <label className="block text-sm text-gray-700 mb-1">Message</label>
+            <label className="flex justify-start text-sm text-gray-700 mb-1">Message</label>
             <textarea
               name="message"
               value={form.message}
