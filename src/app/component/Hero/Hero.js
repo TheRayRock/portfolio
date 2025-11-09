@@ -16,7 +16,8 @@ const Hero = () => (
 </h1>
 
       <p className="text-gray-400 mt-4">
-        I’m Sagar Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+        I love creating both — smooth backends and eye-catching frontend designs.
+I enjoy mixing logic with creativity to make cool, working projects.
       </p>
       {/* <div className="flex space-x-4 mt-8">
         <button className="p-2 rounded-md bg-black text-white"><FaFacebook /></button>

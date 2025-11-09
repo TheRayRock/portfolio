@@ -16,7 +16,7 @@ const skills = [
   { name: "MySQL", icon: "/mysql.png"},
   { name: "MongoDB", icon: "/database.png"},
   { name: "AWS", icon: "/file.png"},
-  { name: "OpenCV", icon: "/icons/opencv.svg"},
+  { name: "OpenCV", icon: "/vision.png"},
   { name: "Git", icon: "/github.png"},
   { name: "Postman", icon: "/free-postman-logo-icon-svg-download-png-3032239.webp"},
 ]
